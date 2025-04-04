@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát độ hiểu biết về nhân vật Lê Lợi</title>
+    <style>
+        body {
+            border: #333 solid 10px;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Khảo sát độ hiểu biết về nhân vật Lê Lợi</h1>
+<form action="#" method="post">
+    <div class="form-group">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label>1. Bạn biết gì về nhân vật Lê Lợi?</label>
+        <textarea id="knowledge" name="knowledge" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+        <label>2. Lê Lợi là nhân vật lịch sử nổi tiếng vì điều gì? (Chọn nhiều đáp án)</label>
+        <ul>
+            <li>
+                <input type="checkbox" id="hero" name="reason" value="hero">
+                <label for="hero">Là một anh hùng dân tộc</label>
+            </li>
+            <li>
+                <input type="checkbox" id="founder" name="reason" value="founder">
+                <label for="founder">Là người sáng lập triều đại Lê</label>
+            </li>
+            <li>
+                <input type="checkbox" id="revolution" name="reason" value="revolution">
+                <label for="revolution">Lãnh đạo cuộc khởi nghĩa Lam Sơn</label>
+            </li>
+            <li>
+                <input type="checkbox" id="other" name="reason" value="other">
+                <label for="other">Khác (vui lòng ghi rõ)</label>
+                <input type="text" id="otherReason" name="otherReason" placeholder="Vui lòng ghi rõ">
+            </li>
+        </ul>
+    </div>
+    <div class="form-group">
+        <label>3. Bạn đánh giá độ hiểu biết của mình về Lê Lợi như thế nào?</label>
+        <input type="radio" id="low" name="knowledgeLevel" value="low" required>
+        <label for="low">Thấp</label>
+        <input type="radio" id="medium" name="knowledgeLevel" value="medium">
+        <label for="medium">Trung bình</label>
+        <input type="radio" id="high" name="knowledgeLevel" value="high">
+        <label for="high">Cao</label>
+    </div>
+    <div class="form-group">
+        <label>4. Bạn có muốn tìm hiểu thêm về Lê Lợi không?</label>
+        <input type="checkbox" id="interested" name="interested" value="yes">
+        <label for="interested">Có</label>
+    </div>
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Khảo sát độ hiểu biết về nhân vật Lê Lợi</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                background-color: #f4f4f4;
+            }
+            h1 {
+                text-align: center;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .form-group {
+                margin-bottom: 15px;
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+     
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            button {
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+
+        <div class="form-group">
+            <label>1. Bạn biết gì về nhân vật Lê Lợi?</label>
+            <textarea id="knowledge" name="knowledge" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>2. Lê Lợi là nhân vật lịch sử nổi tiếng vì điều gì?</label>
+            <select id="reason" name="reason" required>
+                <option value="">-- Chọn một đáp án --</option>
+                <option value="hero">Là một anh hùng dân tộc</option>
+                <option value="founder">Là người sáng lập triều đại Lê</option>
+                <option value="revolution">Lãnh đạo cuộc khởi nghĩa Lam Sơn</option>
+                <option value="other">Khác (vui lòng ghi rõ)</option>
+            </select>
+            <input type="text" id="otherReason" name="otherReason" placeholder="Vui lòng ghi rõ" style="display:none;">
+        </div>
+        <div class="form-group">
+            <label>3. Bạn đánh giá độ hiểu biết của mình về Lê Lợi như thế nào?</label>
+            <select id="knowledgeLevel" name="knowledgeLevel" required>
+                <option value="">-- Chọn một mức độ --</option>
+                <option value="low">Thấp</option>
+                <option value="medium">Trung bình</option>
+                <option value="high">Cao</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>4. Bạn có muốn tìm hiểu thêm về Lê Lợi không?</label>
+            <select id="interested" name="interested" required>
+                <option value="no">Không</option>
+                <option value="yes">Có</option>
+            </select>
+        </div>
+        <button type="submit">Gửi khảo sát</button>
+    </form>
